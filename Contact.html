@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Meine erste HTML Seite</title>
+    </head>
+    <body>
+        <form>
+            <h2>Kontakt</h2>
+            <p><strong><abbr title="required">*</abbr></strong> markiert benötigte Felder.</p>
+        
+            <section>
+                <h2>Informationen:</h2>
+                <p>
+                    <legend>Anrede</legend>
+                        <label for="title_1">
+                            <input type="radio" id="title_1" name="title" value="Dr." />
+                            Dr.
+                        </label>
+                        <label for="title_2">
+                            <input type="radio" id="title_2" name="title" value="Prof." />
+                            Prof.
+                        </label>
+                </p>
+                <p>
+                    <label for="sex_1">
+                        <input type="radio" id="title_1" name="sex" value="Miss" required />
+                        Frau
+                    </label>
+                    <label for="sex_2">
+                        <input type="radio" id="title_2" name="sex" value="Mister"  required/>
+                        Herr
+                    </label>
+                    <strong><abbr title="required">*</abbr></strong>
+                </p>
+            </section>
+			<section>
+                <p>
+                    <label for="msg_type">
+                        <span>Thema:</span>
+                        <select id="msg_type" name="msg_tpye">
+                            <option value="request">Anfrage</option>
+                            <option value="comment">Kommentar</option>
+                            <option value="stuff">Zeug</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <legend>Antwort als:</legend>
+                        <label for="msg_response">
+                            <input type="checkbox" id="msg_response_1" name="repsonse" value="letter" />
+                            Brief
+                        </label>
+                        <label for="title_2">
+                            <input type="checkbox" id="msg_response_2" name="repsonse" value="mail" />
+                            E-Mail
+                        </label>
+                        <label for="title_3">
+                            <input type="checkbox" id="msg_response_3" name="repsonse" value="tel" />
+                            Anruf
+                        </label>
+                        <label for="title_4">
+                            <input type="checkbox" id="msg_response_4" name="repsonse" value="sms" />
+                            SMS
+                        </label>
+                </p>
+            </section>
+            <section>
+                <table>
+                    <tr>
+                        <td>
+                            <span>Name: </span>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="username" required />
+                        </td>
+                        <td>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>E-mail: </span>
+                        </td>
+                        <td>
+                            <input type="email" id="mail" name="usermail" required />
+                        </td>
+						<td>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Telefonnummer:</span>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="telnumber" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <span>Webseite:</span>
+                        </td>
+                        <td>
+                            <input type="url" id="url" name="webside" />
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                             <span>Betreff:</span>
+                        </td>
+                        <td>
+                            <input type="text" id="sub" name="subject" required/>
+                        </td>
+						<td>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                             <span>Inhalt:</span>
+                        </td>
+                        <td>
+                            <textarea name="subject" required rows="10"></textarea>
+                        </td>
+						<td>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <p>
+                    <button>Bestätigen</button> <button type="reset">Zurücksetzen</button>
+                </p>
+            </section>
+			<section>
+                <p>
+                    <input type="color">
+                </p>
+                <p>
+                    <input type="file">
+                </p>
+                <p>
+                    <input type="date">
+                </p>
+                <p>
+                    <input type="time">
+                </p>
+            </section>
+        </form>
+    </body>
+</html>
